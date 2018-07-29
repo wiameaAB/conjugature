@@ -1,2 +1,2 @@
 # conjugature
-Il conjugue les verbes o plusieures temps.
+Il conjugue les verbes au plusieures temps.
