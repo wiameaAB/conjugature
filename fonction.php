@@ -13,7 +13,7 @@
             $result+=ter[i];
             $result+="<br>";
         }
-        
+
         echo $result;
     }
 
@@ -25,5 +25,6 @@
         }
         return $nchaine;
     }
+
    
 ?>
