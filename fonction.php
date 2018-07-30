@@ -5,12 +5,12 @@
         $result="";
         
         $verbe=supp_er($_POST["verbe"]);
-
+        $ter=terminaison($verbe, $mode, $temps);
         for($i=0;i<6;i++){
-            $result+=$PronomPers[i];
+            $result+=$PronomPers[$i];
             $result+=" ";
-            $result+=verb;
-            $result+=ter[i];
+            $result+=$verb;
+            $result+=$ter[i];
             $result+="<br>";
         }
 
