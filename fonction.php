@@ -27,7 +27,12 @@
     }
 
     function terminaison($verbe, $mode, $temps){
-        if($)
+        if(is_1G($verbe)){
+            if($mode=="indicatif"){
+                if($temps=="present") return $Ter_Indicatif_Present_1G;
+            }
+        }
+        /*à completer*/
     }
 
    

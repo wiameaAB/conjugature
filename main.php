@@ -27,6 +27,7 @@
 			<select name="temps">
 				<optgroup label="Temps">
 					<option value="present">Présent</option>
+					<option value="future">Future</option>
 					<!--Completer les autres temps-->
 				</optgroup>
 			</select>
