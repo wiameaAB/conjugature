@@ -27,7 +27,7 @@
     }
 
     function terminaison($verbe, $mode, $temps){
-
+        if($)
     }
 
    
