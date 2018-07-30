@@ -20,10 +20,17 @@
 
 	<fieldset><legend>Chosir votre verbe</legend>
 		<form action="verbe_conjugaison.php" method="POST">
-
+			
+			conjuger le verbe
 			<input type="text" name="verbe" id="EnterLeVerbe" placeholder="Entrer le verbe">
-			
-			
+			au
+			<select name="temps">
+				<optgroup label="Temps">
+					<option value="present">Présent</option>
+					<!--Completer les autres temps-->
+				</optgroup>
+			</select>
+			de
 			<select name="mode">
 				<optgroup label="Mode">
 					<option value="indicatif">Indicatif</option>
@@ -31,12 +38,7 @@
 				</optgroup>
 			</select>
 
-			<select name="temps">
-				<optgroup label="Temps">
-					<option value="present">Présent</option>
-					<!--Completer les autres temps-->
-				</optgroup>
-			</select>
+			
 		
 			<input type="submit" value="conjuger-le">
 
