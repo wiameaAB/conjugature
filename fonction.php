@@ -1,10 +1,10 @@
 <?php
     include("conDATA.php");
 
-    function conjuger(verbe,mode,temps){
+    function conjuger($verbe, $mode, $temps){
         $result="";
         
-        verbe=supp_er($_POST["verbe"]);
+        $verbe=supp_er($_POST["verbe"]);
 
         for($i=0;i<6;i++){
             $result+=$PronomPers[i];
@@ -24,6 +24,10 @@
             $i++;
         }
         return $nchaine;
+    }
+
+    function terminaison($verbe, $mode, $temps){
+
     }
 
    
