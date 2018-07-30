@@ -6,7 +6,7 @@
         
         $verbe=supp_er($_POST["verbe"]);
         $ter=terminaison($verbe, $mode, $temps);
-        for($i=0;i<6;i++){
+        for($i=0;i<6;$i++){
             $result+=$PronomPers[$i];
             $result+=" ";
             $result+=$verb;
@@ -35,5 +35,10 @@
         /*à completer*/
     }
 
+    function is_1G($verbe){
+        $l=strlen($verbe);
+        if($verbe[$l-3]=="e" $verbe[$l-2]=="r") return true;
+        return false;
+    }
    
 ?>
