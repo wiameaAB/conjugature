@@ -1,17 +1,16 @@
 <?php
-    include("conDATA.php");
 
     function conjuger($verbe, $mode, $temps){
         $result="";
-        
-        $verbe=supp_er($_POST["verbe"]);
         $ter=terminaison($verbe, $mode, $temps);
-        for($i=0;i<6;$i++){
-            $result+=$PronomPers[$i];
-            $result+=" ";
-            $result+=$verb;
-            $result+=$ter[i];
-            $result+="<br>";
+        $verbe=supp_er($_POST["verbe"]);
+        for($i=0;$i<6;$i++){
+            include("conDATA.php");
+            $result.=$PrenomsPers[$i];
+            $result.=" ";
+            $result.=$verbe;
+            $result.=$ter[$i];
+            $result.="<br>";
         }
 
         echo $result;
@@ -27,17 +26,18 @@
     }
 
     function terminaison($verbe, $mode, $temps){
+        include("conDATA.php");
         if(is_1G($verbe)){
             if($mode=="indicatif"){
-                if($temps=="present") return $Ter_Indicatif_Present_1G;
+                if($temps=="present")return $Ter_Indicatif_Present_1G;
             }
         }
         /*à completer*/
     }
 
     function is_1G($verbe){
-        $l=strlen($verbe);
-        if($verbe[$l-3]=="e" $verbe[$l-2]=="r") return true;
+        $l=strlen($verbe); 
+        if($verbe[$l-2]=="e" && $verbe[$l-1]=="r") return true;
         return false;
     }
    
